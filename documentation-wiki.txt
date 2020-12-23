@@ -1,0 +1,42 @@
+This is our Documentation Wiki
+Documentation: rules for a programming language
+Wiki: shared reference we can all edit
+
+/* Objects */
+
+breadBox: a mailbox-sized box on the counter that holds a sliced loaf of bread
+slice: a slice of bread   
+plate: an oval large enough for two slices of bread
+leftSlice: the slice on the left side of the plate 
+rightSlice: the slice on the right side of the plate
+pantry: closet for holding food that does not require refrigeration
+cupboard: closet for holding plates and silverware
+
+/* Locations */
+
+counter: for food preparation
+pantry: for non-refrigerated foot
+fridge: for refrigerated food
+cupboard: for plates, cups, napkins
+drawer: for silverware like bread knife
+kitchen: a place you run babysister program
+
+/* Commands */
+
+goTo(location); argument from among Kitchen storage and prep locations
+get(object); must be object at current storage or prep location. Get an object from a location.
+take(object); take an object from another object (like, take a slice of bread from a bread bag);
+hold(); put "gotten" object in other hand, so able to take a second object. 
+open(); must be "gotten" storage container 
+spread(target); sources is content of opened container. Target is a bread object. 
+close(container): must be a container that has been opened.
+put(object): must be put in or on current storage or prep location; must be holding.
+scoop(): use tool in left hand to get spread out of jar in right hand. 
+
+/* Rules */
+You can only "get" right after a "goTo". 
+You have to have a plate before you can put down a slice. 
+You can only hold one object in one hand. 
+You "get" with a dominant (right) hand. 
+You "hold" in the other (left) hand.
+The drawers and breadBox / breadBag are on the counter. 

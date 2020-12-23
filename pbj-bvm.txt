@@ -1,0 +1,56 @@
+/* 
+ * "PBJ" written in the language "BabySister"
+ * by Belinda VM
+ * See help.txt for commands 
+ */
+
+/* Get Tools */
+goTo(cupboard);
+get(plate);
+goTo(counter);
+put(plate);
+
+
+/* Get the bread */
+open(breadBox);
+get(slice);
+hold(slice);
+get(slice)
+goto(plate);
+put(slice);
+put(slice);
+goto(breadBox);
+close(breadBox);
+
+/* Get Spreads */
+goTo(pantry);
+get(jellyJar);
+close(pantry);
+goTo(counter);
+put(jellyJar);
+open(jellyJar);
+open(counter);
+get(knife);
+close(counter);
+
+/* Spread on Bread */
+get(bread);
+hold(bread);
+get(knife);
+scoop(jelly);
+spread(jelly);
+put(bread);
+goTo(pantry);
+open(pantry);
+get(peanutButterJar);
+close(pantry);
+get(bread);
+hold(bread);
+get(knife);
+scoop(peanutButter);
+spread(peanutButter);
+put(bread);
+
+/* Make Sandwich */
+combine(bread);
+eat(sandwich);
